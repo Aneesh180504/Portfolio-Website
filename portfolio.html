@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#SERVICES">SERVICES</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="main-text">
+                <p>Hi,</p>
+                <h2>I'm <name>Aneesh</name> <br> A Frontend Developer</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="ABOUT">
+        <div class="container">
+            <div class="row">
+                <div class="about-1">
+                    <img src="IMAGES/mypic.png">
+                </div>
+                <div class="about-2">
+                    <h1 class="title-main">About Me</h1>
+                    <br>
+                    <p> I am a good timekeeper, always willing to learn new skills. 
+                        I am friendly, helpful and polite, have a good sense of humour.
+                        I am able to work independently in busy environments and also 
+                        within a team setting. I am outgoing and tactful, and able to 
+                        listen effectively when solving problems.
+                    </p>
+                    <br>
+
+                    <div class="sub-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Apps</li>
+                            <li><span>Data Science</span><br>Extract Data<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Schooling</span><br>12th</li>
+                            <li><span>B.Tech</span><br>2nd Year</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>App Development</span><br>Finncial Maintainance App</li>
+                            <li><span>Web Programming</span><br>Frontend for Hotel Booking Website</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+    <div id="SERVICES">
+        <div class="containers">
+            <div class="row">
+                <div>
+                    <h1 class="sev">Services</h1>
+                    <div class="services">
+                        <div class="service">
+                            <h2> Responsive Web Design</h2>
+                            <p>Create visually stunning and user-friendly websites that adapt seamlessly to different devices and screen sizes.</p>
+                        </div>
+                        <div class="service">
+                            <h2> HTML & CSS</h2>
+                            <p>Utilize the latest standards in HTML and CSS to build modern and stylish web interfaces with clean and semantic code.</p>
+                        </div>
+                        <div class="service">
+                            <h2> JavaScript Development</h2>
+                            <p>Develop dynamic and interactive web applications using powerful JavaScript frameworks and libraries.</p>
+                        </div>
+                        <div class="service">
+                            <h2> Frontend Optimization</h2>
+                            <p>Optimize frontend performance and user experience through efficient code, asset optimization, and responsive design techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <br><br>
+
+
+
+    <div id="CONTACT">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Conatct Me</h1>
+                    
+                    <p><span class="mail-symbol">✉️</span> aneeshchandra.18@gmail.com</p>
+                    <p><span class="phone-symbol">📞</span>    9150572717</p>
+                    <br><br><br><br>
+                    <div class="social-icons">
+                       <a href="https://twitter.com/your-profile"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                       <a href="#" class="fa fa-facebook"></a>
+                       <a href=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                       <a href="#" class="fa fa-twitter-square"></a>
+                       <a href=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                       <a href="#" class="fa fa-instagram"></a>
+                       <a href=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                       <a href="#" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>

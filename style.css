@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background: #000000;
+    color: #fff;
+}
+
+
+.theory{
+    color: #fff;
+    font-size: 230px;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(IMAGES/imp2.jpg);
+}
+
+#ABOUT{
+    background-image: url(IMAGES/imp2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#CONTACT{
+    background-image: url(IMAGES/imp2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#SERVICES{
+    background-image: url(IMAGES/imp2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 16px 9%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 110px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 25px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #004b96;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.main-text{
+    margin-top: 10%;
+    font-size: 31px;
+    margin-top: 150px;
+}
+
+.main-text h2{
+    font-size: 55px;
+    margin-top: 20px;
+} 
+.main-text h2 name{
+    color: #004b96;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    float: left;
+    width: 10%;
+}
+.contact-right{
+    flex-basis: 60%;
+    float: right;
+    width: 55%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #004b96;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 30px;
+    color: #986161;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #96a8b1;
+    transform: translateY(-4px);
+}
+
+.btn{
+    display: block;
+    margin: 50px;
+    width: fit-content;
+    border: 1px solid #181a1e;
+    padding: 15px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fafafa;
+    display: inline-block;
+    background-color: #004b96;
+    transition: 0.5s;
+    margin-left: 6px;
+}
+
+.btn::hover{
+    background: #004b96;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #242222;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+#ABOUT{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-1{
+    flex-basis: 35%;
+}
+
+.about-1 img{
+    width: 80%;
+    margin-right: 65px;
+    height: 80%;
+    margin-top: 48px;
+}
+
+.about-2{
+    flex-basis: 60%;
+}
+
+.title-main{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.sub-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #004b96;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 60%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #004b96;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.phone-symbol{
+    background-color: #ababab;
+}
+.mail-symbol{
+    background-color: #ababab;
+}
+
+
+
+
+
+
+
+
+
+
+
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sev {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+  .service {
+    background-color: #222020; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(35, 33, 33, 0.1);
+    padding: 30px;
+    margin: 20px;
+    flex: 1 1 300px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .service:hover {
+    transform: translateY(-5px);
+    background-color: #353434;
+  }
+  
+  .service h2 {
+    color: #00529a;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .service p {
+    color: #d3d3d3;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .service::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+
