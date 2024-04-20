@@ -25,23 +25,23 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url(IMAGES/imp2.jpg);
+    background-image: url(imp2.jpg);
 }
 
 #ABOUT{
-    background-image: url(IMAGES/imp2.jpg);
+    background-image: url(imp2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #CONTACT{
-    background-image: url(IMAGES/imp2.jpg);
+    background-image: url(imp2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #SERVICES{
-    background-image: url(IMAGES/imp2.jpg);
+    background-image: url(imp2.jpg);
     background-size: cover;
     background-position: center;
 }
